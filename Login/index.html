@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Login - Cuidaê</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <img class="logo" src="img/Logo.png" alt="Logo do nosso projeto">
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Serviços</a>
+            <a href="#">Fale Conosco</a>
+
+            <button class="btnLogin-popup"><a href="..\Login\index.html">Login</a></button>
+            <button class="btnRegistre-popup"><a href="..\Cadastro\index.html">Registre-se</a></button>
+  
+        </nav>
+    </header>
+
+    <!-- Container principal -->
+    <div class="container">
+        <div class="forms">
+            <!-- Formulário de login -->
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#">
+                    <!-- Campo de entrada de e-mail -->
+                    <div class="input-field">
+                        <input type="text" placeholder="Insira o seu Email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <!-- Campo de entrada de senha -->
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Insira a sua senha" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <!-- Checkbox "Lembre-me" e link "Esqueceu a senha?" -->
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Lembre-me</label>
+                        </div>
+
+                        <a href="#" class="text">Esqueceu a senha?</a>
+                    </div>
+
+                    <!-- Botão de entrada -->
+                    <div class="input-field button">
+                        <input type="button" value="Entrar">
+                    </div>
+                </form>
+
+                <!-- registrar uma nova conta -->
+                <div class="login-signup">
+                    <span class="text">Não possui uma conta?
+                        <a href="#" class="text signup-link">Registre-se Agora!</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Script JavaScript -->
+            <script src="script.js"></script>
+        </div>
+    </div>
+
+</body>
+
+</html>
