@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F8F8FF;
+}
+
+/* Navbar */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: #F8F8FF;
+  box-shadow: 0px 5px 4px 5px #FAE5F8;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.navbar a{
+  position: relative;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 60px;
+  margin-right: 65px;
+}
+
+.navbar a:after{
+  content: "";
+  position: absolute;
+  background-color: #B9499F;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: .3s;
+}
+
+a:hover::after{
+  width: 100%;
+}
+
+.navbar .btnLogin-popup{
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #B9499F;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #B9499F;
+  font-weight: 500px;
+  margin-left: 40px;
+  border-radius: 15px;
+  transition: .4s;
+}
+
+.navbar .btnLogin-popup:hover{
+  background: #B9499F;
+  color: #F8F8FF;
+}
+
+.navbar .btnRegistre-popup{
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #B9499F;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #B9499F;
+  font-weight: 500px;
+  margin-left: 40px;
+  border-radius: 15px;
+  transition: .4s;
+}
+
+.navbar .btnRegistre-popup:hover{
+  background: #B9499F;
+  color: #F8F8FF;
+}
+/* Fim Navbar */
+
+.wrapper {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #9B46B9;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #F8F8FF;
+  text-align: center;
+}
+
+.wrapper h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+}
+
+.wrapper form {
+  margin-top: 30px;
+}
+
+.wrapper form .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+
+form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  background-color: #FFFAE6;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+form .policy {
+  display: flex;
+  align-items: center;
+}
+
+form h3 {
+  color: #F8F8FF;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.input-box.button input {
+  color: #FD2C84;
+  letter-spacing: 1px;
+  border: none;
+  background: #F8F8FF;
+  cursor: pointer;
+}
+
+.input-box.button input:hover {
+  background: #FFFAE6;
+}
+
+form .text h3 {
+  color: #F8F8FF;
+  width: 100%;
+  text-align: center;
+}
+
+form .text h3 a {
+  color: #FFFAE6;
+  text-decoration: none;
+}
+
+form .text h3 a:hover {
+  text-decoration: underline;
+}
