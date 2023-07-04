@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  /* min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  background: #F8F8FF;
+}
+
+/*Navbar*/
+.retangulo {
+  box-sizing: border-box;
+  background: #f8f8ff;
+  border-radius: 0px 20px 20px 20px;
+  width: 100%;
+  height: 179px;
+  box-shadow: 0px 5px 4px 5px rgba(250, 229, 248, 1);
+  margin-top: -120px
+}
+.logo img{
+width: 90px;
+height: 90px;
+margin-left: 30px;
+margin-top: 30px;
+}
+.topicos-nav ul{
+  flex: 1;
+  text-align: left;
+  margin-top: -60px;
+  margin-left: 200px;
+}
+.topicos-nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 40px;
+  font-size: 20px;
+}
+.topicos-nav ul li a{
+  text-decoration: none;
+  color: #811AA6;
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+}
+.topicos-nav ul li a::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #811AA6;
+  position: absolute;
+  left: 0;
+  bottom: 33px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+
+.topicos-nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+.iconenav {
+  position: absolute;
+  top: 58px;
+  left: 1110px;
+  color: rgb(152, 21, 218);
+  font-size: 22px;
+}
+.icon-link:hover {
+  color: #499FB9;
+}
+.button-nav {
+  font-family: 'Roboto Slab', serif;
+  margin-top: -92px;
+  margin-left: 1130px;
+}
+
+.btn {
+  font-weight: bold;
+  width: 100px; 
+  height: 30px; 
+  background: #B9499F;
+  border: 2px solid #B9499F;
+  outline: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 14px; 
+  color: #ffff;
+  margin-left: 40px; 
+  margin-right: 5px;
+}
+.btn:hover {
+  background: #F8F8FF;
+  color: #B9499F;
+}
+.btn-registro {
+  font-weight: bold;
+  width: 115px; 
+  height: 32px; 
+  background: #B9499F;
+  border: 2px solid #B9499F;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px; 
+  color: #ffff;
+  margin-left: 30px; 
+  margin-right: 12px;
+}
+.btn-registro:hover {
+  background: #F8F8FF;
+  color: #B9499F;
+}
+/*Fim-Navbar*/
+
+.wrapper {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #9B46B9;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 150px;
+  margin-left: 640px;
+}
+
+.wrapper h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #F8F8FF;
+  text-align: center;
+}
+
+.wrapper h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+}
+
+.wrapper form {
+  margin-top: 30px;
+}
+
+.wrapper form .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+
+form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  background-color: #FFFAE6;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+form .policy {
+  display: flex;
+  align-items: center;
+}
+
+form h3 {
+  color: #F8F8FF;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.input-box.button input {
+  color: #FD2C84;
+  letter-spacing: 1px;
+  border: none;
+  background: #F8F8FF;
+  cursor: pointer;
+}
+
+.input-box.button input:hover {
+  background: #FFFAE6;
+}
+
+form .text h3 {
+  color: #F8F8FF;
+  width: 100%;
+  text-align: center;
+}
+
+form .text h3 a {
+  color: #FFFAE6;
+  text-decoration: none;
+}
+
+form .text h3 a:hover {
+  text-decoration: underline;
+}
