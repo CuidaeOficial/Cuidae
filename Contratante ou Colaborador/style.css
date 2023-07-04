@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  /* height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  background-color: #F8F8FF;
+}
+
+/*Navbar*/
+.retangulo {
+  box-sizing: border-box;
+  background: #f8f8ff;
+  border-radius: 0px 20px 20px 20px;
+  width: 100%;
+  height: 179px;
+  box-shadow: 0px 5px 4px 5px rgba(250, 229, 248, 1);
+  margin-top: -120px
+}
+.logo img{
+width: 90px;
+height: 90px;
+margin-left: 30px;
+margin-top: 30px;
+}
+.topicos-nav ul{
+  flex: 1;
+  text-align: left;
+  margin-top: -60px;
+  margin-left: 200px;
+}
+.topicos-nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 40px;
+  font-size: 20px;
+}
+.topicos-nav ul li a{
+  text-decoration: none;
+  color: #811AA6;
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+}
+.topicos-nav ul li a::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #811AA6;
+  position: absolute;
+  left: 0;
+  bottom: 33px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+
+.topicos-nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+.iconenav {
+  position: absolute;
+  top: 58px;
+  left: 1110px;
+  color: rgb(152, 21, 218);
+  font-size: 22px;
+}
+.icon-link:hover {
+  color: #499FB9;
+}
+.button-nav {
+  font-family: 'Roboto Slab', serif;
+  margin-top: -92px;
+  margin-left: 1130px;
+}
+
+.btn {
+  font-weight: bold;
+  width: 100px; 
+  height: 30px; 
+  background: #B9499F;
+  border: 2px solid #B9499F;
+  outline: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 14px; 
+  color: #ffff;
+  margin-left: 40px; 
+  margin-right: 5px;
+}
+.btn:hover {
+  background: #F8F8FF;
+  color: #B9499F;
+}
+.btn-registro {
+  font-weight: bold;
+  width: 115px; 
+  height: 32px; 
+  background: #B9499F;
+  border: 2px solid #B9499F;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px; 
+  color: #ffff;
+  margin-left: 30px; 
+  margin-right: 12px;
+}
+.btn-registro:hover {
+  background: #F8F8FF;
+  color: #B9499F;
+}
+/*Fim-Navbar*/
+
+.container {
+  width: 1000px;
+  height: 500px;
+  border-radius: 25px;
+  background-color: #F8F8FF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 5px #9B46B9;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+
+h1 {
+  color: #9B46B9;
+  font-size: 55px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  margin-right: 200px;
+}
+
+.image2 {
+  width: 200px;
+}
+
+.button1 {
+  margin-right: 300px;
+  padding: 10px 20px;
+  background-color: #FD2C84;
+  color: #F8F8FF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.button2 {
+  padding: 10px 20px;
+  background-color: #FD2C84;
+  color: #F8F8FF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.button1:hover,
+.button2:hover {
+  background-color: #9B46B9;
+  color: #F8F8FF;
+}
