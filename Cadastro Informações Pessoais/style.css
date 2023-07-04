@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    /* min-height: 100vh; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* padding: 20px; */
+    background-color: #F8F8FF;
+}
+
+/*Navbar*/
+.retangulo {
+    box-sizing: border-box;
+    background: #f8f8ff;
+    border-radius: 0px 20px 20px 20px;
+    width: 100%;
+    height: 179px;
+    box-shadow: 0px 5px 4px 5px rgba(250, 229, 248, 1);
+    margin-top: -120px
+  }
+  .logo img{
+  width: 90px;
+  height: 90px;
+  margin-left: 30px;
+  margin-top: 30px;
+  }
+  .topicos-nav ul{
+    flex: 1;
+    text-align: left;
+    margin-top: -60px;
+    margin-left: 200px;
+  }
+  .topicos-nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 40px;
+    font-size: 20px;
+  }
+  .topicos-nav ul li a{
+    text-decoration: none;
+    color: #811AA6;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+  }
+  .topicos-nav ul li a::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #811AA6;
+    position: absolute;
+    left: 0;
+    bottom: 33px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+  }
+  
+  .topicos-nav ul li a:hover::after {
+    transform: scaleX(1);
+  }
+  .iconenav {
+    position: absolute;
+    top: 58px;
+    left: 1110px;
+    color: rgb(152, 21, 218);
+    font-size: 22px;
+  }
+  .icon-link:hover {
+    color: #499FB9;
+  }
+  .button-nav {
+    font-family: 'Roboto Slab', serif;
+    margin-top: -92px;
+    margin-left: 1130px;
+  }
+  
+  .btn {
+    font-weight: bold;
+    width: 100px; 
+    height: 30px; 
+    background: #B9499F;
+    border: 2px solid #B9499F;
+    outline: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 14px; 
+    color: #ffff;
+    margin-left: 40px; 
+    margin-right: 5px;
+  }
+  .btn:hover {
+    background: #F8F8FF;
+    color: #B9499F;
+  }
+  .btn-registro {
+    font-weight: bold;
+    width: 115px; 
+    height: 32px; 
+    background: #B9499F;
+    border: 2px solid #B9499F;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px; 
+    color: #ffff;
+    margin-left: 30px; 
+    margin-right: 12px;
+  }
+  .btn-registro:hover {
+    background: #F8F8FF;
+    color: #B9499F;
+  }
+  /*Fim-Navbar*/
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #9B46B9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    margin-left: 470px;
+}
+
+.container header {
+    font-size: 1.5rem;
+    color: #F8F8FF;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #F8F8FF;
+}
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    background-color: #FFFAE6;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.input-box.address :where(input, .select-box) {
+    margin-top: 15px;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    background-color: #FFFAE6;
+    font-size: 1rem;
+}
+
+.form button {
+    height: 55px;
+    width: 100%;
+    color: #FD2C84;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: #F8F8FF;
+}
+
+.form button:hover {
+    background-color: #FFFAE6;
+}
+
+/* Responsividade */
+/* @media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+} */
